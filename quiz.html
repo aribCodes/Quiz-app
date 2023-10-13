@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="quiz_style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="userlogin">
+            <img src="loginicon.png" alt="login-icon">
+            <h3 id="greeting">user</h3>
+            <button id="signout" onclick="signout()"> &#128274; LOG OUT</button>
+        </div>
+        
+        <div id="div1">
+            <div id="startQuiz">
+                <p id="startQuizPara">Take your Quiz</p>
+                <button id="startQuizBtn" onclick="questions()">Start</button>
+            </div>
+
+            <div id="quesDisplay">
+                <p id="question"></p>
+                <div id="optDisplay">
+                    <input type="radio" id="input1" name="choose" value="">
+                    <label id="label1"></label><br>
+                    <input type="radio" id="input2" name="choose" value="">
+                    <label id="label2"></label><br>
+                    <input type="radio" id="input3" name="choose" value="">
+                    <label id="label3"></label>
+                </div>
+            </div>
+            
+            <div id="result">
+                <!-- -------------progress bar-------------- -->
+                <div class="container">   
+                    <p id="score"></p>
+                    <br> 
+                    <div class="progress progress-moved">
+                        <div class="progress-bar"></div>                       
+                    </div> 
+                </div>
+                <!-- ====================================== -->
+            </div>
+        </div>
+        <button id="nextBtn" onclick="getvalue()">Next ></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
